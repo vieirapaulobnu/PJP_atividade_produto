@@ -35,7 +35,7 @@ def listar_produtos():
     conexao = conectar()
     cursor = conexao.cursor()
 
-    sql = "SELECT * FROM produto"        
+    sql = "SELECT * FROM produto p WHERE p.id = %s"        
     cursor.execute(sql)
 
     produtos = []

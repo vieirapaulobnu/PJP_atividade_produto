@@ -28,6 +28,6 @@ def mostrar():
         elif opcao == "1":
             cadastrar()
         elif opcao == "2":
-             mostrar()
+            mostrar()
         else:
             print("Opção inválida! Tente novamente.")
